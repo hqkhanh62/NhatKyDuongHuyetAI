@@ -1,0 +1,16 @@
+# Firebase
+google-services.json
+
+# Build
+.gradle/
+build/
+local.properties
+
+# Android
+*.apk
+*.aab
+captures/
+
+# OS
+.DS_Store
+Thumbs.db
