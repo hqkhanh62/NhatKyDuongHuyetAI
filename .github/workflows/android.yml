@@ -12,6 +12,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      # ✅ ADD NODE HERE
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Setup JDK
         uses: actions/setup-java@v3
         with:
