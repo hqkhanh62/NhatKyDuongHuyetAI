@@ -17,5 +17,10 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
     }
 }
-
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
 apply plugin: "com.facebook.react.rootproject"
+apply plugin: 'com.google.gms.google-services'
