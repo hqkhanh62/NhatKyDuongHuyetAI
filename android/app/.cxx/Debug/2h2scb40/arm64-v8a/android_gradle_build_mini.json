@@ -1,0 +1,43 @@
+{
+  "buildFiles": [
+    "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\node_modules\\react-native-safe-area-context\\android\\src\\main\\jni\\CMakeLists.txt",
+    "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\node_modules\\react-native\\ReactAndroid\\cmake-utils\\default-app-setup\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Khanh\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\android\\app\\.cxx\\Debug\\2h2scb40\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Khanh\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\android\\app\\.cxx\\Debug\\2h2scb40\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "react_codegen_safeareacontext::@7984cd80db47aa7b952a": {
+      "artifactName": "react_codegen_safeareacontext",
+      "abi": "arm64-v8a",
+      "output": "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\android\\app\\build\\intermediates\\cxx\\Debug\\2h2scb40\\obj\\arm64-v8a\\libreact_codegen_safeareacontext.so",
+      "runtimeFiles": [
+        "C:\\Users\\Khanh\\.gradle\\caches\\9.3.1\\transforms\\220d65392139fe00f2cec43032d9c0c5\\workspace\\transformed\\fbjni-0.7.0\\prefab\\modules\\fbjni\\libs\\android.arm64-v8a\\libfbjni.so",
+        "C:\\Users\\Khanh\\.gradle\\caches\\9.3.1\\transforms\\a847044664aa525620bfe285e58ad805\\workspace\\transformed\\react-android-0.86.0-debug\\prefab\\modules\\jsi\\libs\\android.arm64-v8a\\libjsi.so",
+        "C:\\Users\\Khanh\\.gradle\\caches\\9.3.1\\transforms\\a847044664aa525620bfe285e58ad805\\workspace\\transformed\\react-android-0.86.0-debug\\prefab\\modules\\reactnative\\libs\\android.arm64-v8a\\libreactnative.so"
+      ]
+    },
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "artifactName": "appmodules",
+      "abi": "arm64-v8a",
+      "output": "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\android\\app\\build\\intermediates\\cxx\\Debug\\2h2scb40\\obj\\arm64-v8a\\libappmodules.so",
+      "runtimeFiles": [
+        "G:\\MyGithub\\ChatGPT\\NhatKyDuongHuyetAI\\android\\app\\build\\intermediates\\cxx\\Debug\\2h2scb40\\obj\\arm64-v8a\\libreact_codegen_safeareacontext.so",
+        "C:\\Users\\Khanh\\.gradle\\caches\\9.3.1\\transforms\\220d65392139fe00f2cec43032d9c0c5\\workspace\\transformed\\fbjni-0.7.0\\prefab\\modules\\fbjni\\libs\\android.arm64-v8a\\libfbjni.so",
+        "C:\\Users\\Khanh\\.gradle\\caches\\9.3.1\\transforms\\a847044664aa525620bfe285e58ad805\\workspace\\transformed\\react-android-0.86.0-debug\\prefab\\modules\\jsi\\libs\\android.arm64-v8a\\libjsi.so",
+        "C:\\Users\\Khanh\\.gradle\\caches\\9.3.1\\transforms\\a847044664aa525620bfe285e58ad805\\workspace\\transformed\\react-android-0.86.0-debug\\prefab\\modules\\reactnative\\libs\\android.arm64-v8a\\libreactnative.so"
+      ]
+    }
+  }
+}
