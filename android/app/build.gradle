@@ -1,6 +1,5 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
-apply plugin: "com.facebook.react"
 
 react {
     autolinkLibrariesWithApp()
@@ -9,16 +8,21 @@ react {
 def enableProguardInReleaseBuilds = false
 def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
 
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
 android {
     namespace "com.nhatkyduonghuyetai"
 
-    compileSdk rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdk 34
+    buildToolsVersion "34.0.0"
 
     defaultConfig {
         applicationId "com.nhatkyduonghuyetai"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -38,8 +42,7 @@ android {
         }
         release {
             signingConfig signingConfigs.debug
-            minifyEnabled enableProguardInReleaseBuilds
-            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            minifyEnabled false
         }
     }
 }
@@ -47,11 +50,11 @@ android {
 dependencies {
     implementation("com.facebook.react:react-android")
 
-    def hermesEnabled = project.hasProperty("hermesEnabled") ? project.hermesEnabled : "true"
+    def hermesEnabled = true
 
-    if (hermesEnabled.toBoolean()) {
+    if (hermesEnabled) {
         implementation("com.facebook.react:hermes-android")
     } else {
-        implementation jscFlavor
+        implementation("io.github.react-native-community:jsc-android:2026004.+")
     }
 }
