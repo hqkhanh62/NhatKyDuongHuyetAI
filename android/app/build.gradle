@@ -1,13 +1,3 @@
-apply plugin: "com.android.application"
-apply plugin: "org.jetbrains.kotlin.android"
-
-react {
-    autolinkLibrariesWithApp()
-}
-
-def enableProguardInReleaseBuilds = false
-def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
-
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
