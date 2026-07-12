@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Theme chính cho app Nhật ký đường huyết -->
+    <style name="Theme.Material3.DayNight.NoActionBar" parent="Theme.Material3.DayNight">
+        <!-- Ẩn action bar / title bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Tuỳ chọn: bạn có thể cấu hình thêm màu sắc, ví dụ:
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        -->
+    </style>
+
+</resources>
