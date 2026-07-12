@@ -1,6 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+apply plugin: "com.google.gms.google-services"
 
 react {
     autolinkLibrariesWithApp()
@@ -10,25 +11,25 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
-    namespace "com.nhatkyduonghuyetai"
-    
+
+    namespace "com.nhatkyduonghuyetai"       // hoặc com.example.NhatKyDuongHuyetAI nếu chọn hướng A
     defaultConfig {
-        applicationId "com.NhatKyDuongHuyetAI"
+        applicationId "com.nhatkyduonghuyetai"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
-    
+
     signingConfigs {
         debug {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+            storeFile file("debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
         }
     }
-    
+
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
@@ -46,8 +47,6 @@ dependencies {
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
     } else {
-        implementation "io.github.react-native-community:jsc-android:2026004.+"
+        implementation("io.github.react-native-community:jsc-android:2026004.+")
     }
 }
-
-apply plugin: 'com.google.gms.google-services'
