@@ -1,0 +1,5 @@
+# ninja log v5
+8	114	0	G:/MyGithub/ChatGPT/NhatKyDuongHuyetAI/android/app/.cxx/Debug/4a1r1o2u/arm64-v8a/CMakeFiles/cmake.verify_globs	98aa370cc9e48a20
+56	93213	8055564875198367	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/529f96019a39aa0365cd9145b3e9642f/renderer/components/safeareacontext/EventEmitters.cpp.o	e252dfee936ddf2a
+68	98423	8055564927585276	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/96b1823b925b03d807ba9ea79c5f9175/source/codegen/jni/safeareacontext-generated.cpp.o	2f0cd500e189274c
+98426	102332	8055564968294035	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/ea291883c50b4aecc920c3bf41497ebd/react/renderer/components/safeareacontext/States.cpp.o	91d5486182bcf9cb
