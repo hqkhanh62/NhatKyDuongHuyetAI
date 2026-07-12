@@ -12,25 +12,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # ✅ Node
+      # ✅ ADD NODE HERE
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      # ✅ QUAN TRỌNG: install ở ROOT
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
-      # ✅ DEBUG (rất quan trọng)
-      - name: Check npx
-        run: |
-          npx --version
-          node -v
-          npm -v
-
-      # ✅ Java
       - name: Setup JDK
         uses: actions/setup-java@v3
         with:
@@ -43,7 +33,7 @@ jobs:
       - name: Build APK
         run: |
           cd android
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
