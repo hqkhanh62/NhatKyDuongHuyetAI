@@ -19,8 +19,7 @@ local.properties
 build/
 
 # Firebase (quan trọng)
-google-services.json
-
+android/app/google-services.json
 # iOS (nếu có)
 ios/build/
 Pods/
